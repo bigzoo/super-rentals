@@ -1,7 +1,7 @@
 # super-rentals
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is an application where property owners may list places for rent, and renters will be able to find places to stay. (Similar to Buy Rent Kenya, or AirBnB ).
 
 ## Prerequisites
 
