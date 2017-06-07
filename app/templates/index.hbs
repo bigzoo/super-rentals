@@ -1,36 +1,25 @@
 <h1> Welcome to Super Rentals </h1> We hope you find exactly what you're looking for in a place to stay.
+<h2> Available Rentals </h2>
 
-<!-- <ul>
-
-</ul> -->
-
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Image</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>one</td>
-      <td>two</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    {{#each model as |rental|}}
-      <tr>
-        {{rental-tile rental=rental}}
-      </tr>
-    {{/each}}
-  </tbody>
-</table>
-
-
+<ul>
+  {{#each model.rentals as |rental|}}
+    {{rental-tile rental=rental}}
+  {{/each}}
+</ul>
 
 {{new-rental saveRental2="saveRental3"}}
+
+<h2> All Reviews </h2>
+
+<ul>
+  {{#each model.reviews as |review|}}
+    <li>{{review.rating}} - {{review.content}} - by {{review.author}}</li>
+  {{/each}}
+</ul>
+
+{{new-review saveReview="saveReview"}}
+
+<hr>
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
