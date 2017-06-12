@@ -13,6 +13,7 @@ export default Ember.Component.extend({
         image: this.get('image'),
         owner: this.get('owner'),
         type: this.get('type'),
+        cost: parseInt(this.get('cost'))
       };
       this.set('addNewRental', false);
       this.sendAction('saveRental2', params);

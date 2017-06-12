@@ -3,7 +3,10 @@
 
 <ul>
   {{#each model.rentals as |rental|}}
+    {{rental-popularity rental}}
+    {{rental-cost rental}}
     {{rental-tile rental=rental}}
+    <hr>
   {{/each}}
 </ul>
 
@@ -16,8 +19,6 @@
     <li>{{review.rating}} - {{review.content}} - by {{review.author}}</li>
   {{/each}}
 </ul>
-
-{{new-review saveReview="saveReview"}}
 
 <hr>
 
