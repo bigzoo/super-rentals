@@ -2,3 +2,7 @@
   text-align: center;
   color: grey;
 }
+.map-display{
+  height: 600px;
+  width: 600px;
+}
