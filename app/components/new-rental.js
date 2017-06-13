@@ -13,7 +13,9 @@ export default Ember.Component.extend({
         image: this.get('image'),
         owner: this.get('owner'),
         type: this.get('type'),
-        cost: parseInt(this.get('cost'))
+        cost: parseInt(this.get('cost')),
+        longitude: this.get('longitude'),
+        latitude: this.get('latitude')
       };
       this.set('addNewRental', false);
       this.sendAction('saveRental2', params);
